@@ -54,19 +54,34 @@ public class Task7 {
         } else {
             System.out.println("both of them are illegal");
         }
-
+        //a > 10 b < 1 both of them are odd
         System.out.println("Input a and b");
         int k = scanner.nextInt();
         int l = scanner.nextInt();
 
-        if ((k < 0) && (l < 0)){
-            System.out.println("Both a and b are legal");
-        } else if ((k < 0) && (l > 0)) {
-            System.out.println("a is legal, b is illegal");
-        } else if ((k > 0) && (l < 0)) {
-            System.out.println("a is illegal, b is legal");
-        } else {
-            System.out.println("both of them are illegal");
+        if ((a % 2 == 1) && (b % 2 == 1)) {
+            if (a > 10 ){
+                if(b < 1) {
+                    System.out.println("Both a and b are legal");
+                }else{
+                    System.out.println("a is legal, b is illegal");
+                }
+            }else{
+                if(b < 1){
+                    System.out.println("a is illegal, b is legal");
+                }else {
+                    System.out.println("Both a and b are illegal");
+                }
+            }
+        }else{
+            if(a % 2 != 1){
+                if(b % 2 == 1) {
+                    System.out.println("a is illegal, b is legal");
+                }else{
+                    System.out.println("both of them are illegal");
+                }
+            }
+
         }
 
 

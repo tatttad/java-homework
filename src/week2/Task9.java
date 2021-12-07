@@ -1,7 +1,5 @@
 package week2;
-
 import java.util.Scanner;
-
 /* 9. Given coordinates of two points in the coordinate plane.
       Write java program to check if the points lie in the same plane?(quarter)
       1)Print In the same quarter, else print Not in the same quarter.

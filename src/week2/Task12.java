@@ -1,15 +1,17 @@
 package week2;
+
 import java.util.Scanner;
+
 /* 12. Given the String variable day holding the name of the weekday Sunday, Monday, etc.
        Set an int variable to 1, 2, etc.
  */
 public class Task12 {
     public static void main(String[] args) {
         System.out.println("Please input a day of week with capital letter.");
-        Scanner scanner = new Scanner(System. in);
+        Scanner scanner = new Scanner(System.in);
         String day = scanner.next();
 
-        switch (day){
+        switch (day) {
             case "Monday":
                 System.out.println(1);
                 break;

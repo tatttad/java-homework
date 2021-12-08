@@ -15,7 +15,7 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         double doubleNum = scanner.nextDouble();
         float floatNum = (float) doubleNum;
-        System.out.println(doubleNum + " "+ floatNum);
+        System.out.println(doubleNum + " " + floatNum);
 
         float floatNum1 = scanner.nextFloat();
         long longNum = (long) floatNum1;
@@ -23,15 +23,15 @@ public class Task2 {
 
         long longNum1 = scanner.nextLong();
         int intNum = (int) longNum1;
-        System.out.println(longNum1 + " "+ intNum);
+        System.out.println(longNum1 + " " + intNum);
 
         int intNum1 = scanner.nextInt();
         short shortNum = (short) intNum1;
-        System.out.println(shortNum + " "+ intNum1);
+        System.out.println(shortNum + " " + intNum1);
 
         short shortNum1 = scanner.nextShort();
         byte byteNum = (byte) shortNum1;
-        System.out.println(shortNum1 + " "+ byteNum );
+        System.out.println(shortNum1 + " " + byteNum);
 
 
     }

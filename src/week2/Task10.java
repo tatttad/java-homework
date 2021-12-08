@@ -1,6 +1,9 @@
 package week2;
+
 import java.util.Scanner;
+
 import static java.lang.Math.sqrt;
+
 /*
 10.  Given 3 real numbers a, b, c.
 Find all decisions for ax2 + bx + c = 0.
@@ -19,13 +22,13 @@ public class Task10 {
         } else if (d == 0) {
             double x0 = -b / 2 * a;
             System.out.println("The quadratic equation has one root, which is");
-            System.out.println("x0 = "+ x0);
-        }else{
+            System.out.println("x0 = " + x0);
+        } else {
             double x1 = (-b - sqrt(d)) / (2 * a);
             double x2 = (-b + sqrt(d)) / (2 * a);
 
             System.out.println("Roots of the quadratic equation are ");
-            System.out.println("x1 = "+x1 +", x2 =  "+x2);
+            System.out.println("x1 = " + x1 + ", x2 =  " + x2);
         }
-}
+    }
 }

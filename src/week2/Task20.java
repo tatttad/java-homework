@@ -21,8 +21,8 @@ public class Task20 {
             System.out.println("a should not exceed b");
         } else {
             for (int i = a; i <= b; ++i) {
-                if (sqrt(i) == (int)(sqrt(i))) {
-                    System.out.print( i + " ");
+                if (sqrt(i) == (int) (sqrt(i))) {
+                    System.out.print(i + " ");
                 }
             }
         }

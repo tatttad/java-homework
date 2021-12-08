@@ -1,4 +1,5 @@
 package week2;
+
 import java.util.Scanner;
 
 /* 22. Given an integer number x.

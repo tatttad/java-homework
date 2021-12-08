@@ -13,7 +13,7 @@ public class Task3 {
         double area = pi * radius * radius;
         double perimeter = 2 * pi * radius;
 
-        System.out.println("The area of circle with " + radius + " radius is - " + area  );
-        System.out.println("The perimeter of circle with " + radius + " radius is - " + perimeter );
+        System.out.println("The area of circle with " + radius + " radius is - " + area);
+        System.out.println("The perimeter of circle with " + radius + " radius is - " + perimeter);
     }
 }

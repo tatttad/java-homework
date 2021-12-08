@@ -1,5 +1,7 @@
 package week2;
+
 import java.util.Scanner;
+
 /*15. For a given natural N print the smallest integer k that`
       Math.pow(2,k) ≥ N.(You can not use Math.pow())
       Example` Input 7
@@ -12,9 +14,9 @@ public class Task15 {
         int n = scanner.nextInt();
         System.out.print("The smallest integer k that` Math.pow(2,k) ≥ N is ");
         int k = 0;
-        for(int i = 1; i < n; i *= 2){
-             k++;
-            }
+        for (int i = 1; i < n; i *= 2) {
+            k++;
+        }
         System.out.println(k + ".");
     }
 

@@ -1,5 +1,7 @@
 package week2;
+
 import java.util.Scanner;
+
 /* 17. Write a java program to compute the sum of digits in a given integer.
  */
 public class Task17 {

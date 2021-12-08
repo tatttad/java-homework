@@ -12,10 +12,9 @@ public class Task5 {
         System.out.println("Please input your age :)");
         Scanner scanner = new Scanner(System.in);
         int age = scanner.nextInt();
-        if(age >= 18){
+        if (age >= 18) {
             System.out.println("You're eligible to vote.");
-        }
-        else{
+        } else {
             System.out.println("You aren't eligible to vote.");
         }
     }

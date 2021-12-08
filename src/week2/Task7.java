@@ -1,5 +1,7 @@
 package week2;
+
 import java.util.Scanner;
+
 /* 7. Input from console int a and int b,
       if a and b corresponds for following requirements print “Both a and b legal”,
       if any of them does not correspond print about it like this “a is legal b is illegal ''. or vice versa
@@ -12,6 +14,7 @@ import java.util.Scanner;
 */
 public class Task7 {
     public static void main(String[] args) {
+        //1) a > 10 and b is not equal to 10
         System.out.println("Input a and b");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
@@ -24,67 +27,98 @@ public class Task7 {
         } else if ((a < 10) && (b != 10)) {
             System.out.println("a is illegal, b is legal");
         } else {
-            System.out.println("both of them are illegal");
+            System.out.println("Both of them are illegal");
         }
 
+        //2) both a and b is positive
         System.out.println("Input a and b");
         int c = scanner.nextInt();
         int d = scanner.nextInt();
 
-        if ((c > 0) && (d > 0)){
+        if ((c > 0) && (d > 0)) {
             System.out.println("Both a and b are legal");
         } else if ((c > 0) && (d < 0)) {
             System.out.println("a is legal, b is illegal");
         } else if ((c < 0) && (d > 0)) {
             System.out.println("a is illegal, b is legal");
         } else {
-            System.out.println("both of them are illegal");
+            System.out.println("Both of them are illegal");
         }
 
+        //3) both a and b is negative
         System.out.println("Input a and b");
         int m = scanner.nextInt();
         int n = scanner.nextInt();
 
-        if ((m < 0) && (n < 0)){
+        if ((m < 0) && (n < 0)) {
             System.out.println("Both a and b are legal");
         } else if ((m < 0) && (n > 0)) {
             System.out.println("a is legal, b is illegal");
         } else if ((m > 0) && (n < 0)) {
             System.out.println("a is illegal, b is legal");
         } else {
-            System.out.println("both of them are illegal");
+            System.out.println("Both of them are illegal");
         }
-        //a > 10 b < 1 both of them are odd
+
+        //4) a > 10 b < 1 both of them are odd
         System.out.println("Input a and b");
         int k = scanner.nextInt();
         int l = scanner.nextInt();
 
         if ((a % 2 == 1) && (b % 2 == 1)) {
-            if (a > 10 ){
-                if(b < 1) {
+            if (a > 10) {
+                if (b < 1) {
                     System.out.println("Both a and b are legal");
-                }else{
+                } else {
                     System.out.println("a is legal, b is illegal");
                 }
-            }else{
-                if(b < 1){
+            } else {
+                if (b < 1) {
                     System.out.println("a is illegal, b is legal");
-                }else {
+                } else {
                     System.out.println("Both a and b are illegal");
                 }
             }
-        }else{
-            if(a % 2 != 1){
-                if(b % 2 == 1) {
+        } else {
+            if (a % 2 != 1) {
+                if (b % 2 == 1) {
                     System.out.println("a is illegal, b is legal");
-                }else{
-                    System.out.println("both of them are illegal");
+                } else {
+                    System.out.println("Both of them are illegal");
                 }
             }
 
         }
 
+        //5)a is a multiple of 5 OR b is a multiple of 5
+        System.out.println("Input a and b");
+        int e = scanner.nextInt();
+        int f = scanner.nextInt();
 
+        if ((e % 5 == 0) || (f % 5 == 0)) {
+            System.out.println("Both a and b are legal");
+        } else if ((e % 5 != 0) || (f % 5 == 0)) {
+            System.out.println("a is legal, b is legal");
+        } else if ((e % 5 == 0) || (f % 5 != 0)) {
+            System.out.println("a is legal, b is legal");
+        } else {
+            System.out.println("Both of them are illegal");
+        }
+
+        //6)a is not a multiple of 5 but b is a multiple of 5
+        System.out.println("Input a and b");
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
+        if ((x % 5 != 0) && (y % 5 == 0)) {
+            System.out.println("Both a and b are legal");
+        } else if ((x % 5 != 0) || (y % 5 != 0)) {
+            System.out.println("a is legal, b is illegal");
+        } else if ((x % 5 == 0) || (y % 5 != 0)) {
+            System.out.println("a is illegal, b is legal");
+        } else {
+            System.out.println("Both of them are illegal");
+        }
 
     }
 }

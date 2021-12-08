@@ -27,7 +27,7 @@ public class Task19 {
                     System.out.print(i + " ");
                 }
             }
-        } else if (a >= b){
+        } else if (a >= b) {
             System.out.println(("All numbers on the segment from a to b that give the remainder of c when divided by d are "));
             for (int i = a; i >= b; i--) {
                 if (i % d == c) {

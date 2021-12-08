@@ -1,4 +1,5 @@
 package week2;
+
 import java.util.Scanner;
 
 /* 4. What happens if concatenate string and another primitive type
@@ -8,7 +9,7 @@ import java.util.Scanner;
 */
 public class Task4 {
     public static void main(String[] args) {
-        Scanner scanner =  new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Input first integer");
         int b = scanner.nextInt();
         System.out.println("Input second integer");

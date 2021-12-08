@@ -1,5 +1,7 @@
 package week2;
+
 import java.util.Scanner;
+
 /* 16.Print all integer numbers from 1 to N, except that are multiple of 3 (Input N from console).
  */
 public class Task16 {
@@ -9,10 +11,10 @@ public class Task16 {
         int n = scanner.nextInt();
         System.out.print("All integer numbers from 1 to N, except that are multiple of 3 are ");
 
-        for (int i = 1; i <= n; i++){
-            if(i % 3 == 0){
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0) {
                 continue;
-            }else {
+            } else {
                 System.out.print(i + " ");
             }
         }

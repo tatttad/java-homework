@@ -1,5 +1,7 @@
 package week2;
+
 import java.util.Scanner;
+
 /*
 1.Write java program, which has byte type variable(Input variables from console)
     1)Cast byte to short type, print both variables
@@ -24,11 +26,11 @@ public class Task1 {
         System.out.println(intNum1 + " " + longNum);
 
         long longNum1 = scanner.nextInt();
-        float  floatNum = longNum1;
+        float floatNum = longNum1;
         System.out.println(longNum1 + " " + floatNum);
 
         float floatNum1 = scanner.nextInt();
-        double  doubleNum = floatNum1;
+        double doubleNum = floatNum1;
         System.out.println(floatNum1 + " " + doubleNum);
 
     }

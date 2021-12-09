@@ -18,23 +18,30 @@ public class Task8 {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = scanner.nextInt();
             }
-            int min = arr[0];
-            int max = arr[0];
-            for (int i = 0; i < arr.length; i++) {
-                if(arr[i]> max){
-                    max = arr[i];
 
+            int minIndex = 0;
+            int maxIndex = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] > arr[maxIndex]) {
+                    maxIndex = i;
                 }
-                if( arr[i]<min){
-                    min = arr[i];
+                if (arr[i] < arr[minIndex]) {
+                    minIndex = i;
                 }
-                int temp;
-                temp = max;
-                max = min;
-                min =temp;
             }
 
+            int temp;
+            if (arr[minIndex] != arr[maxIndex]) {
+                temp = arr[minIndex];
+                arr[minIndex] = arr[maxIndex];
+                arr[maxIndex] = temp;
 
+            }
+
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(arr[i] + " ");
+            }
         }
     }
 }
